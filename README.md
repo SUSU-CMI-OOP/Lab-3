@@ -13,13 +13,13 @@
 ```c++
 int main() 
 {
-	TKing bKing(black,’h’,5);
-	THorse bHorse1(black,’c’,2);
-	TKing bKing2(black,’a’,1);	// эта строчка работать не должна, потому что двух
+	TKing bKing(black,'h',5);
+	THorse bHorse1(black,'c',2);
+	TKing bKing2(black,'a',1);	// эта строчка работать не должна, потому что двух
 			  		// одинаковых королей быть не может
-	THorse bHorse2(black,’с’,2);	// эта строчка работать не должна, потому что клетка
+	THorse bHorse2(black,'с',2);	// эта строчка работать не должна, потому что клетка
 			  		// с2 уже занята
-	THorse bHorse3(black,’z’,20);	// эта строчка работать не должна из-за 
+	THorse bHorse3(black,'z',20);	// эта строчка работать не должна из-за 
 			  		// неправильных координат
 
 	TFigure *figures[32];
@@ -29,7 +29,7 @@ int main()
 	/*for (int i = 0; i < 32; i++)
 		figures[i]->mapStep();*/
 
-	TKing wKing(white,’a’,4);
+	TKing wKing(white,'a',4);
 	cout << endl << wKing.Situation();
 
 	return 0;
@@ -45,4 +45,4 @@ int main()
 3.	Проследить правильную организацию исключений.  
 
 
-*Можно использовать с# или Java
+**\*Можно использовать с# или Java**
