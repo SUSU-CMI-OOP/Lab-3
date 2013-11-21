@@ -14,17 +14,17 @@
 int main() 
 {
 	TKing bKing(black,'h',5);
-	THorse bHorse1(black,'c',2);
+	TKnight bKnight1(black,'c',2);
 	TKing bKing2(black,'a',1);	// эта строчка работать не должна, потому что двух
 			  		// одинаковых королей быть не может
-	THorse bHorse2(black,'с',2);	// эта строчка работать не должна, потому что клетка
+	TKnight bKnight2(black,'с',2);	// эта строчка работать не должна, потому что клетка
 			  		// с2 уже занята
-	THorse bHorse3(black,'z',20);	// эта строчка работать не должна из-за 
+	TKnight bKnught3(black,'z',20);	// эта строчка работать не должна из-за 
 			  		// неправильных координат
 
 	TFigure *figures[32];
 	figures[0]=&bKing;
-	figures[1]=&bHorse;
+	figures[1]=&bKnight;
 
 	/*for (int i = 0; i < 32; i++)
 		figures[i]->mapStep();*/
